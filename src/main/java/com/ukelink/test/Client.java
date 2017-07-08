@@ -16,7 +16,7 @@ import io.netty.util.CharsetUtil;
 import java.net.InetSocketAddress;
 
 public class Client {
-
+	//host
     private final String host;
     private final int port;
     /**
@@ -75,7 +75,7 @@ public class Client {
 		@Override
 		protected void channelRead0(ChannelHandlerContext ctx, ByteBuf msg)
 				throws Exception {
-			System.out.println("Client received:" + msg.toString(CharsetUtil.UTF_8));
+			System.out.println("Client received message :" + msg.toString(CharsetUtil.UTF_8));
 		}
     	
     }
