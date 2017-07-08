@@ -16,7 +16,6 @@ import io.netty.util.CharsetUtil;
 import java.net.InetSocketAddress;
 
 public class Client {
-	//host
     private final String host;
     private final int port;
     /**
@@ -53,7 +52,7 @@ public class Client {
 
 
     public static void main (String [] args) throws Exception {
-        new Client("127.0.0.1", 12345).start();//test comment
+        new Client("127.0.0.1", 12345).start();
     }
 
     
